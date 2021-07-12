@@ -9,7 +9,9 @@ mongoose.connect(mongoURI,{
     useNewUrlParser:true,
     useUnifiedTopology:true,
     useFindAndModify:true,
-    useCreateIndex:true
+    useCreateIndex:true,
+    useFindAndModify:false
+    
 
 });
 const io = require("socket.io")(5000,{
